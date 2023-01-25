@@ -7,8 +7,7 @@ z = int(input('Введите z: '))
 res1 = not (x or y or z)
 res2 = not x and not y and not z
 
-res = res1 == res2
-if res:
+if res1 == res2:
     print("Утверждение истинно")
 else:
     print("Утверждение ложно")

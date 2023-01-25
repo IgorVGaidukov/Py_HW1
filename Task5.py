@@ -8,17 +8,13 @@ a_y = 0
 b_x = 0
 b_y = 0
 
-print('Введите ненулевые координаты точки A')
-while (a_x == 0):
-    a_x = int(input('x: '))
-while (a_y == 0):
-    a_y = int(input('y: '))
+print('Введите координаты точки A')
+a_x = int(input('x: '))
+a_y = int(input('y: '))
 
 print('Введите ненулевые координаты точки B')
-while (b_x == 0):
-    b_x = int(input('x: '))
-while (b_y == 0):
-    b_y = int(input('y: '))
+b_x = int(input('x: '))
+b_y = int(input('y: '))
 
 dist = ((b_x - a_x)**2 + (b_y - a_y)**2)**0.5
 print(f'Расстояние между точками - {dist:.2f}')

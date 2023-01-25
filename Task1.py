@@ -5,9 +5,7 @@
 # - 1 -> нет
 
 num_day = int(input('Введите день недели: '))
-if num_day in range(1,6):
-    print(f'День {num_day} - не выходной')
-elif num_day in range(6,8):
+if num_day >= 6 and num_day <= 7:
     print(f'День {num_day} - выходной')
-else:
-    print(f'{num_day} - не день недели')
+else: 
+    print(f'День {num_day} - не выходной')

@@ -8,19 +8,19 @@ x = 0
 y = 0
 
 print('Введите координаты точки не равные нулю')
-while (x == 0):
+while x == 0:
     x = int(input('x: '))
-while (y == 0):
+while y == 0:
     y = int(input('y: '))
 
 num = 0
-if (x > 0) and (y > 0):
+if x > 0 and y > 0:
     num = 1
-elif (x < 0) and (y > 0):
+elif x < 0 and y > 0:
     num = 2
-elif (x < 0) and (y < 0):
+elif x < 0 and y < 0:
     num = 3
-elif (x > 0) and (y < 0):
+elif x > 0 and y < 0:
     num = 4
 
 print(f'Номер четверти плоскости - {num}')
